@@ -16,3 +16,15 @@ clean up all created images.
 
 6) Run new containers based on the re-built images, ensuring that the containers
 are removed automatically when stopped.
+
+Creating the Node App:
+
+```docker build -t basic_node_app:latest .```
+
+```docker run -p 3000:3000 --name basic_node_app --rm f9060b4f8f4c```
+
+Creating the Python App:
+
+```docker build -t basic_python_app:latest .```
+
+```docker run --name basic_python_app --rm 9dab4f4778e1```
