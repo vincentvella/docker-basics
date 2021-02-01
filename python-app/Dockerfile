@@ -1,7 +1,7 @@
 FROM python
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY . /app
+COPY . /usr/src/app
 
 CMD [ "python", "bmi.py" ]
